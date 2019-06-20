@@ -1,0 +1,5 @@
+.gitignore
+Dockerfile
+ecs-task.json
+vendor
+web/core
