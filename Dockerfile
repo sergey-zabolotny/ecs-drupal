@@ -16,7 +16,11 @@ RUN set -xe; \
 # Start with an official Drupal image for now.
 # TODO: switch to php:7.3-apache
 FROM drupal:8.7.3-apache
-RUN rm -rf /var/www/html
+RUN set -xe; \
+	# Remove existing Drupal installation
+	rm -rf /var/www/html; \
+	# Update ownership on /var/www or Drupal will complain that it cannot create the config folder (/var/www/config)
+	chown www-data:www-data /var/www
 
 # Change default Apache DocumentRoot
 ENV APACHE_DOCUMENT_ROOT=/var/www/web
