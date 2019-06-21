@@ -774,8 +774,8 @@ $settings['hash_salt'] = "ljnwejcba;rebva^drngfwAES'CKLNWIUW4BFVW#SLKNSDFAKJSD";
 // Database connection.
 $databases['default']['default'] = [
   'database' => getenv('DATABASE_NAME'),
-  'username' => getenv('DATABASE_USERNAME'),
-  'password' => getenv('DATABASE_PASSWORD'),
+  'username' => getenv('DATABASE_USER'),
+  'password' => getenv('DATABASE_PASS'),
   'prefix' => '',
   'host' => getenv('DATABASE_ENDPOINT'),
   'port' => getenv('DATABASE_PORT'),
