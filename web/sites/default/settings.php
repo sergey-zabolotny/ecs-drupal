@@ -783,6 +783,13 @@ $databases['default']['default'] = [
   'driver' => 'mysql',
 ];
 
+// s3fs settings
+$config['s3fs.settings']['bucket'] = getenv('FILES_BUCKET');
+$settings['s3fs.use_s3_for_public'] = TRUE;
+$settings['s3fs.use_s3_for_private'] = TRUE;
+$settings['s3fs.public_folder'] = 'files';
+$settings['s3fs.private_folder'] = 'files-private';
+
 /**
  * Load local development override configuration, if available.
  *
