@@ -767,7 +767,9 @@ $settings['entity_update_backup'] = TRUE;
 $config_directories['sync'] = '../config/sync';
 
 // Hash salt.
-$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
+//$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
+// TODO: Hardcoded hash_salt for now.
+$settings['hash_salt'] = "ljnwejcba;rebva^drngfwAES'CKLNWIUW4BFVW#SLKNSDFAKJSD";
 
 // Database connection.
 $databases['default']['default'] = [
