@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3326ff0806a23a138e667f455b052a4e",
+    "content-hash": "9715902bdae3ac9afb67b43e77f1ae79",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2740,6 +2740,53 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/s3fs",
                 "issues": "https://www.drupal.org/project/issues/s3fs"
+            }
+        },
+        {
+            "name": "drupal/twig_temp",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_temp.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_temp-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "b874491e59c334bbdc273c2425100abe03376035"
+            },
+            "require": {
+                "drupal/core": "^8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1494515885",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "deviantintegral",
+                    "homepage": "https://www.drupal.org/user/71291"
+                }
+            ],
+            "description": "Store compiled Twig templates in the temporary file system",
+            "homepage": "https://www.drupal.org/project/twig_temp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/twig_temp"
             }
         },
         {
