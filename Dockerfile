@@ -46,4 +46,4 @@ WORKDIR /var/www/
 
 EXPOSE 22
 
-CMD ["sshd && apache2-foreground"]
+CMD ["sh","-c","sshd && apache2-foreground"]
