@@ -44,3 +44,6 @@ COPY --chown=www-data:www-data . /var/www/
 
 WORKDIR /var/www/
 
+EXPOSE 22
+
+CMD ["sshd && apache2-foreground"]
