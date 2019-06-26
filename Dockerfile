@@ -17,6 +17,9 @@ RUN set -xe; \
 # TODO: switch to php:7.3-apache
 FROM drupal:8.7.3-apache
 RUN set -xe; \
+  apt-get update; \
+	apt-get install -y --no-install-recommends \
+		ssh; \
 	# Remove existing Drupal installation
 	rm -rf /var/www/html; \
 	# Update ownership on /var/www or Drupal will complain that it cannot create the config folder (/var/www/config)
