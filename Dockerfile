@@ -45,6 +45,8 @@ COPY --chown=www-data:www-data . /var/www/
 WORKDIR /var/www/
 
 EXPOSE 22
-RUN mkdir /run/sshd
+RUN mkdir /run/sshd; \
+  echo 'root:root' | chpasswd; \
+  echo "PermitRootLogin yes" >>/etc/ssh/sshd_config
 
 CMD ["sh","-c","/usr/sbin/sshd && apache2-foreground"]
