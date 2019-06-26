@@ -40,3 +40,4 @@ COPY --chown=www-data:www-data . /var/www/
 # && mv drush.phar /usr/local/bin/drush
 
 WORKDIR /var/www/
+
